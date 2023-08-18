@@ -7,12 +7,12 @@ public class EjemploBaraja
 
         System.out.println("Mazo inicial:");
         for (int carta = 0; carta < Baraja.NUM_CARTAS; carta++)
-            System.out.print(baraja.getCarta(carta) + " ");
+            System.out.print(baraja.carta(carta) + " ");
         System.out.println("\nCartas: " + Carta.getCuenta());
         baraja.barajar();
         System.out.println("Mazo después de barajar:");
         for (int carta = 0; carta < Baraja.NUM_CARTAS; carta++)
-            System.out.print(baraja.getCarta(carta) + " ");
+            System.out.print(baraja.carta(carta) + " ");
         System.out.println();
     }
 
