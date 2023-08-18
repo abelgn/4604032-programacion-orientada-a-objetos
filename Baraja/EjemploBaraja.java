@@ -3,16 +3,16 @@ public class EjemploBaraja
 {
 
     public void ejecutar() {
-        Baraja b = new Baraja();
+        Baraja baraja = new Baraja();
 
         System.out.println("Mazo inicial:");
-        for (int c = 0; c < Baraja.NUM_CARTAS; c++)
-            System.out.print(b.getCarta(c) + " ");
+        for (int carta = 0; carta < Baraja.NUM_CARTAS; carta++)
+            System.out.print(baraja.getCarta(carta) + " ");
         System.out.println("\nCartas: " + Carta.getCuenta());
-        b.barajar();
+        baraja.barajar();
         System.out.println("Mazo después de barajar:");
-        for (int c = 0; c < Baraja.NUM_CARTAS; c++)
-        System.out.print(b.getCarta(c) + " ");
+        for (int carta = 0; carta < Baraja.NUM_CARTAS; carta++)
+            System.out.print(baraja.getCarta(carta) + " ");
         System.out.println();
     }
 

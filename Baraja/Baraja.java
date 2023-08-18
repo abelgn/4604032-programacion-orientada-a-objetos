@@ -8,10 +8,10 @@ public class Baraja {
 
     public Baraja() {
         int i = 0;
-        for (int p = 0; p < Palo.values().length; p++) {
-            for (int v = 1; v <= Carta.VALOR_MAX; v++) {
-                Carta c = new Carta(v, Palo.values()[p]);
-                mazo[i] = c;
+        for (int palo = 0; palo < Palo.values().length; palo++) {
+            for (int valor = 1; valor <= Carta.VALOR_MAX; valor++) {
+                Carta carta = new Carta(valor, Palo.values()[palo]);
+                mazo[i] = carta;
                 i++;
             }
         }
@@ -24,10 +24,10 @@ public class Baraja {
     
     
     public void intercambiar(int i, int j) {
-            Carta c1 = mazo[j];
-            Carta c2 = mazo[i];
-            mazo[i] = c1;
-            mazo[j] = c2;
+            Carta carta1 = mazo[j];
+            Carta carta2 = mazo[i];
+            mazo[i] = carta1;
+            mazo[j] = carta2;
     }
             
     
