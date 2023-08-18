@@ -18,7 +18,7 @@ public class Baraja {
     }
     
 
-    public Carta getCarta(int i) {
+    public Carta carta(int i) {
         return mazo[i];
     }
     
