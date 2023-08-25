@@ -11,7 +11,7 @@ public class EjemploPersona
             System.out.println(e + ", es una instancia de Empleado");
         if (e instanceof Persona)
             System.out.println(e + ", es una instancia de Persona");
-        if (!(a instanceof Alumno))
+        if (a instanceof Alumno)
             System.out.println(a + ", a es una instancia de Alumno");
     }
     
