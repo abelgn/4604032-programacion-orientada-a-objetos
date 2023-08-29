@@ -42,6 +42,6 @@ class Banco():
         """Calcula los intereses para cada cuenta y regresa
         el total."""
         total = 0.0
-        for account in self.__accounts.values():
-            total += account.calcular_intereses()
+        for cuenta in self.__cuentas.values():
+            total += cuenta.calcular_intereses()
         return total
